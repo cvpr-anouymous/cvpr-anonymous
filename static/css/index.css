@@ -136,13 +136,13 @@ body {
 
 .audio-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 20px; 
 }
 
 .audio-item {
     text-align: center;
-    margin: 10px;
 }
 
 .audio-caption {
