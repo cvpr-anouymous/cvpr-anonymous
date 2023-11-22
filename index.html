@@ -63,32 +63,14 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
 <!-- Teaser video-->
 <section class="hero is-small">
   <div class="container">
     <div class="hero-body">
         <!-- Your video here -->
-        <img src="static/videos/sample-500-seed33.gif" alt="Description of GIF">
+        <img src="static/gif/man-dance-rainwaterfallfireworks.gif" alt="Description of GIF">
       <h2 class="subtitle has-text-centered">
-      sss      
+      Scenescape editing with audio-guided semantic change.     
       </h2>
     </div>
   </div>
@@ -103,8 +85,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+Current video editing methods predominantly rely on text-driven approaches, focusing on altering content using textual descriptions. However, these methods often struggle with semantic homogeneity and temporal inconsistency, particularly in editing video scenescapes. To address these challenges, we introduce “AudioScenic”, an audio-driven framework for video scenescape editing. Unlike existing methods, AudioScenic leverages the unique properties of audio – semantic diversity, magnitude control, and frequency alignment – to guide the editing process while preserving the foreground content. Our framework employs audio semantic embeddings to edit the video scenescapes and presents a mask blending module to restrict the audio embedding’s influence exclusively to the scenescape areas of videos. We introduce an audio magnitude-aware module for controlling the editing effect. Additionally, we integrate an audio frequency fusion module to ensure temporal alignment between the edited scenescapes and the audio conditions, improving the temporal coherence of synthesized results. Our approach enhances the visual diversity and maintains temporal consistency. We demonstrate the effectiveness of our method through extensive experiments, showing significant improvements over existing text-driven and audio-driven models in video scenescape editing.          </p>
         </div>
       </div>
     </div>
@@ -117,33 +98,20 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-3">Audio semantic diversity</h2>
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/videos/sample-500-seed33.gif" alt="Description of GIF"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/videos/sample-500-seed33.gif" alt="Description of GIF"/>
+        <img src="static/gif/multi-swan-cracking.gif" alt="Description of GIF"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/videos/sample-500-seed33.gif" alt="Description of GIF"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
+         A swan video with multiple audio clips within the "Cracking fire" semantic label.
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/videos/sample-500-seed33.gif" alt="Description of GIF"/>
+      <img src="static/gif/multi-man-seawave.gif" alt="Description of GIF"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        A man-dance video with multiple audio clips within the "Sea wave" semantic label.
       </h2>
     </div>
   </div>
@@ -154,63 +122,46 @@
 
 
 
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
+<!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <h2 class="title is-3">Comparison</h2>
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/gif/comparison-man-seawave.gif" alt="Description of GIF"/>
+        <h2 class="subtitle has-text-centered">
+         First comparing set.
+       </h2>
+     </div>
+     <div class="item">
+        <!-- Your image here -->
+        <img src="static/gif/comparison-surf-waterfall.gif" alt="Description of GIF"/>
+        <h2 class="subtitle has-text-centered">
+        Second comparing set.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<!-- Teaser video-->
+<section class="hero is-small">
+  <div class="container">
+    <div class="hero-body">
+        <!-- Your video here -->
+        <img src="static/gif/magnitude-supp.gif" alt="Description of GIF">
+      <h2 class="subtitle has-text-centered">
+      Scenescape editing with audio magnitude control.     
+      </h2>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
-
-
-
+<!-- End teaser video -->
 
 
 
@@ -227,16 +178,6 @@
     </div>
   </section>
 <!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
 
 
   <footer class="footer">
