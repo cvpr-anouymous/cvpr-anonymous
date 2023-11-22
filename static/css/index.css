@@ -134,4 +134,21 @@ body {
 }
 
 
+.audio-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.audio-item {
+    text-align: center;
+    margin: 10px;
+}
+
+.audio-caption {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+
 
