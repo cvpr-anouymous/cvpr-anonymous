@@ -46,7 +46,7 @@
         <!-- Your video here -->
         <img src="static/gif/man-dance-rainwaterfallfireworks.gif" alt="Description of GIF">
       <h2 class="subtitle has-text-centered">
-      Scenescape editing with audio-guided semantic change.     
+      Video scene editing with audio-guided semantic change.     
       </h2>
     </div>
   </div>
@@ -84,7 +84,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-Current video editing methods predominantly rely on text-driven approaches, focusing on altering content using textual descriptions. However, these methods often struggle with semantic homogeneity and temporal inconsistency, particularly in editing video scenescapes. To address these challenges, we introduce “AudioScenic”, an audio-driven framework for video scenescape editing. Unlike existing methods, AudioScenic leverages the unique properties of audio – semantic diversity, magnitude control, and frequency alignment – to guide the editing process while preserving the foreground content. Our framework employs audio semantic embeddings to edit the video scenescapes and presents a mask blending module to restrict the audio embedding’s influence exclusively to the scenescape areas of videos. We introduce an audio magnitude-aware module for controlling the editing effect. Additionally, we integrate an audio frequency fusion module to ensure temporal alignment between the edited scenescapes and the audio conditions, improving the temporal coherence of synthesized results. Our approach enhances the visual diversity and maintains temporal consistency. We demonstrate the effectiveness of our method through extensive experiments, showing significant improvements over existing text-driven and audio-driven models in video scenescape editing.          </p>
+Audio-driven visual scene editing endeavors to manipulate the visual background while leaving the foreground content unchanged, according to the given audio signals. Unlike current efforts focusing primarily on image editing, audio-driven video scene editing has not been extensively addressed.
+ In this paper, we introduce AudioScenic, an audio-driven framework designed for video scene editing. 
+AudioScenic integrates audio semantics into the visual scene through a temporal-aware audio semantic injection process. As our focus is on background editing, we further introduce a SceneMasker module, which maintains the integrity of the foreground content during the editing process.
+AudioScenic exploits the inherent properties of audio, namely, audio magnitude and frequency, to guide the editing process, aiming to control the temporal dynamics and enhance the temporal consistency. 
+First, we present an audio Magnitude Modulator module that adjusts the temporal dynamics of the scene in response to changes in audio magnitude, enhancing the visual dynamics. Second, the audio Frequency Fuser module is designed to ensure temporal consistency by aligning the frequency of the audio with the dynamics of the video scenes, thus improving the overall temporal coherence of the edited videos.
+These integrated features enable AudioScenic to not only enhance visual diversity but also maintain temporal consistency throughout the video. 
+We present a new metric named temporal score for more comprehensive validation of temporal consistency. We demonstrate substantial advancements of AudioScenic over competing methods on DAVIS and Audioset datasets.       
         </div>
       </div>
     </div>
