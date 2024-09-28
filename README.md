@@ -1,1 +1,1 @@
-# ACM MM 2024 Supplementary
+# AudioScenic: Audio-Driven Video Scene Editing
